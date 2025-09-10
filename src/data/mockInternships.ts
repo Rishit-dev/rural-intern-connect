@@ -113,9 +113,13 @@ export const getFilteredInternships = (
     const matchesSector = !sectorFilter || sectorFilter === 'all' || 
       internship.sector.toLowerCase() === sectorFilter.toLowerCase();
     
-    const matchesSkills = !skills || skills.length === 0 || 
-      skills.some(skill => 
-        internship.skills.some(internshipSkill => 
+    // Ensure skills is an array and internship.skills is an array
+    const skillsArray = Array.isArray(skills) ? skills : [];
+    const internshipSkills = Array.isArray(internship.skills) ? internship.skills : [];
+    
+    const matchesSkills = skillsArray.length === 0 || 
+      skillsArray.some(skill => 
+        internshipSkills.some(internshipSkill => 
           internshipSkill.toLowerCase().includes(skill.toLowerCase())
         )
       );
@@ -132,11 +136,14 @@ export const getPersonalizedRecommendations = (
     education: string;
   }
 ): Internship[] => {
+  // Ensure userProfile.skills is an array
+  const userSkills = Array.isArray(userProfile.skills) ? userProfile.skills : [];
+  
   const filteredByPreferences = getFilteredInternships(
     mockInternships,
     userProfile.location,
     userProfile.sector,
-    userProfile.skills
+    userSkills
   );
 
   // If we have matches based on preferences, return them
@@ -149,7 +156,7 @@ export const getPersonalizedRecommendations = (
     mockInternships,
     undefined,
     undefined,
-    userProfile.skills
+    userSkills
   );
 
   return skillMatches.slice(0, 5);
