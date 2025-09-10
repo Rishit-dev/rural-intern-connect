@@ -1,0 +1,59 @@
+{
+  "name": "InternConnect - Government Internship Portal",
+  "short_name": "InternConnect",
+  "description": "Your one-step solution to all government internships. Simple, personalized, and accessible for everyone.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["education", "government", "career"],
+  "lang": "en",
+  "dir": "ltr",
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "InternConnect Dashboard showing personalized government internship recommendations"
+    },
+    {
+      "src": "/screenshot-mobile.png", 
+      "sizes": "375x812",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile view of InternConnect with voice input feature"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Find Internships",
+      "short_name": "Find",
+      "description": "Discover personalized government internship opportunities",
+      "url": "/recommendations",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Create Profile",
+      "short_name": "Profile", 
+      "description": "Set up your profile for better recommendations",
+      "url": "/signup",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
