@@ -1,73 +1,50 @@
-# Welcome to your Lovable project
+# InternConnect – Government Internship Portal
 
-## Project info
+InternConnect is a modern, responsive web application designed to simplify access to **government internships**, with a focus on **accessibility, rural inclusion, and ease of use**.  
+The platform provides a centralized interface for discovering opportunities, personalized guidance, and a seamless user experience.
 
-**URL**: https://lovable.dev/projects/6c92e615-2917-4c2d-ba1a-7137178c9086
+🔗 **Live Demo:** https://rural-intern-connect-k9lv.vercel.app/
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- Centralized listing of government internship opportunities  
+- Clean and intuitive user interface  
+- Responsive design for mobile and desktop users  
+- Progressive Web App (PWA) support for offline access  
+- Accessibility-focused UI for wider reach  
+- Scalable frontend architecture  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6c92e615-2917-4c2d-ba1a-7137178c9086) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **Frontend:** React, TypeScript  
+- **Build Tool:** Vite  
+- **UI Components:** shadcn/ui  
+- **Styling:** Tailwind CSS  
+- **PWA Support:** Web App Manifest & Service Worker  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📂 Project Setup (Local Development)
 
-Follow these steps:
+### Prerequisites
+- Node.js (v18 or above recommended)
+- npm
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
+### Steps
+
+```bash
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project directory
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6c92e615-2917-4c2d-ba1a-7137178c9086) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
